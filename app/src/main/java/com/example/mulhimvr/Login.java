@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
-    EditText Login, Password;
-    Button Submit;
+    EditText Username, Password;
+    Button Login;
 
 
     @Override
@@ -20,21 +20,22 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Login = (EditText)findViewById(R.id.UserN);
+        Username = (EditText)findViewById(R.id.UserN);
         Password =(EditText) findViewById(R.id.Pass);
 
-        Submit = (Button) findViewById(R.id.LOGIN);
+        Login = (Button) findViewById(R.id.LOGIN);
 
-        Submit.setOnClickListener(new View.OnClickListener() {
+        Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if(Login.getText().toString().isEmpty()||Password.getText().toString().isEmpty()) {
-                    Toast.makeText(Login.this, "Please enter the data", Toast.LENGTH_SHORT).show();
+                if(Username.getText().toString().isEmpty()||Password.getText().toString().isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Please enter the data", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Intent intent = new Intent(getApplicationContext(), Options.class);
-                    startActivity(intent);
+
+                    Intent Login = new Intent(getApplicationContext(), Options.class);
+                    startActivity(Login);
                 }
             }
         });

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Services">
+
+    <RadioButton
+        android:id="@+id/Service1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Virtual Reality"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <RadioButton
+        android:id="@+id/Service2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Augmented Reality"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <RadioButton
+        android:id="@+id/Service3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mixed Reality"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <Button
+        android:id="@+id/Select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="349dp" />
+
+    <Button
+        android:id="@+id/Remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <Button
+        android:id="@+id/NextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MulhimVR"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="50dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

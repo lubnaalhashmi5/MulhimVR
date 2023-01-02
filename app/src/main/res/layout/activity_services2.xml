@@ -4,14 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#a7c4bb"
-    tools:context=".Demo">
+    tools:context=".Services">
 
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MulhimVR"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="53dp" />
     <TextView
         android:id="@+id/hidingDemo"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:text="Select the Demo products"
+        android:text="Select the service"
         android:textSize="20dp"
         android:textColor="@color/black"
         android:layout_marginLeft="20dp"
@@ -19,57 +31,74 @@
         android:layout_marginTop="20dp"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="340dp" />
+
     <RadioGroup
-        android:layout_width="394dp"
-        android:layout_height="62dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="36dp">
+        >
 
-        <RadioButton
-            android:id="@+id/Product1"
-            android:layout_width="186dp"
-            android:layout_height="match_parent"
-            android:text="MulhimVR Platform"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="24dp"
-            tools:layout_editor_absoluteY="25dp" />
+    <RadioButton
+        android:id="@+id/Service1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Virtual Reality"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="123dp" />
 
-        <RadioButton
-            android:id="@+id/Product2"
-            android:layout_width="204dp"
-            android:layout_height="62dp"
-            android:text="Mixed Reality App"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="196dp"
-            tools:layout_editor_absoluteY="21dp" />
-    </RadioGroup>
+    <RadioButton
+        android:id="@+id/Service2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Augmented Reality"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <RadioButton
+        android:id="@+id/Service3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mixed Reality"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="288dp" />
+</RadioGroup>
+    <TextView
+        android:id="@+id/Des"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
     <EditText
-        android:id="@+id/ID"
+        android:id="@+id/ID_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Demo ID"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="175dp" />
-
-    <EditText
-        android:id="@+id/DAY"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter demo day"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
-        android:inputType="number"
+        android:hint="ID service"
+
+        android:inputType="textPersonName"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="251dp" />
+        tools:layout_editor_absoluteY="175dp" />
+    <EditText
+        android:id="@+id/PNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="175dp" />
     <EditText
         android:id="@+id/Clients"
         android:layout_width="wrap_content"
@@ -83,50 +112,40 @@
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="175dp" />
 
-    <TextView
-        android:id="@+id/cost"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="15dp"
-        android:text="The demo price is:"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="340dp" />
-     <LinearLayout
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:orientation="horizontal"
-         android:layout_marginTop="30dp"
-         android:layout_gravity="center"
-         android:gravity="center"
-         >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
 
-         <Button
-             android:id="@+id/Cal_Demo"
-             android:layout_width="150dp"
-             android:layout_height="60dp"
-             android:text="Calculate"
-             android:textStyle="bold"
-             android:textSize="15dp"
-             android:layout_marginLeft="10dp"
-             android:layout_marginRight="10dp"
-             tools:layout_editor_absoluteX="145dp"
-             tools:layout_editor_absoluteY="451dp" />
+        <Button
+            android:id="@+id/Ent_Service"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Enter"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="451dp" />
 
-         <Button
-             android:id="@+id/DELET_Demo"
-             android:layout_width="150dp"
-             android:layout_height="60dp"
-             android:text="Delete"
-             android:textStyle="bold"
-             android:textSize="15dp"
-             android:layout_marginLeft="10dp"
-             android:layout_marginRight="10dp"
-             tools:layout_editor_absoluteX="151dp"
-             tools:layout_editor_absoluteY="402dp" />
+        <Button
+            android:id="@+id/DELET_Service"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Delete"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="402dp" />
 
-     </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="150dp"
@@ -138,7 +157,7 @@
         >
 
         <Button
-            android:id="@+id/UPDATE_Demo"
+            android:id="@+id/UPDATE_Service"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:text="Update"
@@ -150,7 +169,7 @@
             tools:layout_editor_absoluteY="451dp" />
 
         <Button
-            android:id="@+id/READ_Demo"
+            android:id="@+id/READ_Service"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:text="Read"
@@ -172,7 +191,7 @@
         >
 
         <Button
-            android:id="@+id/CLAER_Demo"
+            android:id="@+id/CLAER_Service"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:text="Clear"
@@ -184,7 +203,7 @@
             tools:layout_editor_absoluteY="451dp" />
 
         <Button
-            android:id="@+id/CLOSE_Demo"
+            android:id="@+id/CLOSE_Service"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:text="Close"
@@ -195,11 +214,9 @@
             tools:layout_editor_absoluteX="151dp"
             tools:layout_editor_absoluteY="402dp" />
 
-    </LinearLayout>
-
-
+</LinearLayout>
     <Button
-        android:id="@+id/Back_Demo"
+        android:id="@+id/Back_Service"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:text="Back"

@@ -4,21 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#a7c4bb"
     tools:context=".Options">
 
     <Button
         android:id="@+id/DEMO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Demo"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="341dp" />
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="329dp" />
 
     <Button
         android:id="@+id/SERVICE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Services"
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="233dp" />
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
